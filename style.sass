@@ -1,0 +1,152 @@
+$body-bg: #100E1D
+$left-bg: #1E213A
+$left-bg-img: url("./assets/Cloud-background.png")
+$left-width: 400px
+
+html
+    width: 100%
+    height: 100%
+    padding: 0
+    margin: 0
+body
+    @extend html
+    background-color: $body-bg
+
+.sections
+    display: flex
+    flex-direction: row
+    height: 100%
+    width: 100%
+
+.right-section
+    flex-grow: 7
+    padding: 50px
+    display: flex
+    flex-direction: column
+
+.left-section
+    background-color: $left-bg
+    width: $left-width
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    .left-top
+        display: flex
+        justify-content: space-between
+        margin: 50px
+    .cloud
+        width: 202px
+        height: 234px
+        margin: 5px auto
+        display: flex
+        align-items: center
+        justify-content: center
+        img
+            width: 180px
+            height: 200px
+
+.degree
+    @extend .cloud
+    font-family: 'Raleway'
+    font-style: normal
+    font-weight: 500
+    font-size: 70px
+    line-height: 56.35px
+    color: white
+
+.shower
+    font-family: 'Raleway'
+    font-style: normal
+    font-weight: 600
+    font-size: 30px
+    line-height: 42px
+    text-align: center
+    color: #A09FB1
+
+.footer
+    @extend .cloud
+    font-family: 'Raleway'
+    font-style: normal
+    font-weight: 500
+    font-size: 18px
+    line-height: 21px
+    color: #88869D
+
+.button
+    width: 161px
+    height: 40px
+    background-color: #6E707A
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    display: flex
+    align-items: center
+    justify-content: center
+    span
+        font-family: 'Raleway'
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        line-height: 19px
+        color: #E7E7EB
+
+.ellipse
+    width: 40px
+    height: 40px
+    border-radius: 20px
+    background: rgba(255, 255, 255, 0.2)
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    color: #E7E7EB
+    font-size: 22px !important
+
+.clouds-background
+    width: $left-width
+    height: 376px
+    background-image: url("./assets/Cloud-background.png")
+    background-position: center
+    background-repeat: no-repeat
+    position: absolute
+    top: 103px
+    overflow: hidden
+    opacity: .25
+
+.right-first
+    flex-grow: 1
+    display: flex
+    justify-content: flex-end
+    div
+        background-color: red
+        width: 40px
+        height: 40px
+        border-radius: 20px
+        margin: 5px
+
+.right-second
+    flex-grow: 2
+    display: flex
+    flex-direction: row
+    justify-content: space-evenly
+    div
+        background-color: $left-bg
+        width: 120px
+        height: 177px
+
+.highlights-title
+    font-family: 'Raleway'
+    font-style: normal
+    font-weight: 700
+    font-size: 24px
+    line-height: 28px
+    color: #E7E7EB
+
+.right-third
+    flex-grow: 7
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+
+// div
+//     background-color: red
+//     background-color: $left-bg
+//     width: 328px
+//     height: 204px
+//     margin-right: 50px
