@@ -3,6 +3,8 @@ $left-bg: #1E213A
 $left-bg-img: url("./assets/Cloud-background.png")
 $left-width: 400px
 
+
+
 html
     width: 100%
     height: 100%
@@ -17,12 +19,6 @@ body
     flex-direction: row
     height: 100%
     width: 100%
-
-.right-section
-    flex-grow: 7
-    padding: 50px
-    display: flex
-    flex-direction: column
 
 .left-section
     background-color: $left-bg
@@ -109,26 +105,48 @@ body
     overflow: hidden
     opacity: .25
 
+.right-section
+    flex-grow: 7
+    padding: 20px 80px 10px 80px
+    display: flex
+    flex-direction: column
+
 .right-first
     flex-grow: 1
     display: flex
     justify-content: flex-end
     div
-        background-color: red
+        background-color: white
         width: 40px
         height: 40px
         border-radius: 20px
-        margin: 5px
+        margin: 2px 0 20px 10px
 
 .right-second
     flex-grow: 2
     display: flex
     flex-direction: row
-    justify-content: space-evenly
+    justify-content: space-between
     div
         background-color: $left-bg
         width: 120px
         height: 177px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-around
+        img
+            width: 56.44px
+        span:nth-child(1)
+            font-family: 'Raleway'
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 19px
+            text-align: center
+            color: #E7E7EB
+        span:nth-child(3)
+            @extend span:nth-child(1)
 
 .highlights-title
     font-family: 'Raleway'
@@ -137,16 +155,26 @@ body
     font-size: 24px
     line-height: 28px
     color: #E7E7EB
+    margin-top: 50px
 
 .right-third
     flex-grow: 7
     display: flex
     flex-direction: row
-    flex-wrap: wrap
+    justify-content: space-evenly
 
-// div
-//     background-color: red
-//     background-color: $left-bg
-//     width: 328px
-//     height: 204px
-//     margin-right: 50px
+    .row1
+        width: 328px
+        height: 370px
+
+        div:nth-child(1)
+            width: 328px
+            height: 204px
+            background-color: $left-bg
+        div:nth-child(2)
+            width: 328px
+            height: 159px
+            margin-top: 48px
+            background-color: $left-bg
+    .row2
+        @extend .row1
